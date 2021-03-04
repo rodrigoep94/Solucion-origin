@@ -1,0 +1,9 @@
+<div class="text-align-center">
+  <app-teclado [placeholder]="'Ingrese la cantidad de dinero a retirar'"
+               [errorMessage]="errorMessage"
+               (onAceptar)="manejarAceptar($event)"></app-teclado>
+
+  <div class="col-md-12 mt-4 w-100 align-middle">
+    <button class="btn btn-danger" style="margin-left:-64px" (click)="salir()">Salir</button>
+  </div>
+</div>

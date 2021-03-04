@@ -1,0 +1,18 @@
+<div class="text-align-center">
+
+
+  <div class="col-md-6 offset-4 ">
+    <div class="alert alert-warning alert-space mt-3" role="alert">
+      Tenés {{intentosRestantes}} intentos restantes para ingresar el pin
+    </div>
+  </div>
+
+  <app-teclado [errorMessage]="errorMessage"
+               [placeholder]="'Ingrese el número pin de la tarjeta'"
+               [mask]="'0000'"
+               (onAceptar)="manejarAceptar($event)"></app-teclado>
+
+  <div class="col-md-12 mt-4 w-100 align-middle">
+    <button class="btn btn-danger" style="margin-left:-64px" (click)="salir()">Salir</button>
+  </div>
+</div>

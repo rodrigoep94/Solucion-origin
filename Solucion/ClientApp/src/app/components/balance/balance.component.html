@@ -1,0 +1,15 @@
+
+
+<div class="text-align-center mb-5">
+
+  <div class="col-md-12 mt-5 align-middle">
+    <h5>Número de tarjeta: {{model.numeroTarjeta| mask: '0000-0000-0000-0000'}}</h5>
+    <h5>Fecha de vencimiento: {{fechaFormateada}}</h5>
+    <h5>Cantidad en cuenta: ${{model.cantidadEnCuenta}}</h5>
+  </div>
+
+  <div class="col-md-12 mt-5 w-100 align-middle">
+    <button class="btn btn-info mr-1" [routerLink]="['/operaciones']">Volver</button>
+    <button class="btn btn-danger ml-1" (click)="salir()">Salir</button>
+  </div>
+</div>
